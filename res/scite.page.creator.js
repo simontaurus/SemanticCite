@@ -72,7 +72,7 @@
 			// to be copied
 			page.create(
 				$( this ).data( 'title' ),
-				$( $( this ).data( 'content-selector' ) ).text()
+				$( $( this ).data( 'content-selector' ) ).text().replace("{{#scite:","{{Semantic Reference")
 			);
 
 			event.preventDefault();
